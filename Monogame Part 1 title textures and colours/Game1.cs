@@ -21,6 +21,10 @@ namespace Monogame_Part_1_title_textures_and_colours
             // TODO: Add your initialization logic here
 
             base.Initialize();
+            this.Window.Title = "My First Monogame Project";
+            _graphics.PreferredBackBufferWidth = 500;
+            _graphics.PreferredBackBufferHeight = 800;
+            _graphics.ApplyChanges();
         }
 
         protected override void LoadContent()
@@ -42,7 +46,7 @@ namespace Monogame_Part_1_title_textures_and_colours
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.DarkGreen);
 
             // TODO: Add your drawing code here
 
